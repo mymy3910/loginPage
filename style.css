@@ -1,14 +1,39 @@
 .container{
-   width: 80%;
+   width: 500px;
    margin: auto;
+   text-align:center;
+   background-color:#FAFAFA;
+}
+h2{
+    text-align:center;
+    padding:20px 0 20px 0;
+    font-size: 1.4em;
+    background-color:#008b8b;
+    color: #ffffff;
 }
 input{
-    width: 500px;
+    border: 1px solid #cecece;
+    background-color: #ffffff;
+}
+input[type=text],input[type=password]{
+    width: 400px;
     height: 40px;
+    font-size: 1.2em;
+    padding: 0 10px;
 }
 .btn{
-    width: 100px;
+    width:200px;
+    height: 45px;
+    background-color:#008b8b;
+    font-size: 1.2em;
+    border: 1px solid #48d1cc;
+    color: #ffffff;
 }
-.container #afterLogin{
-    display: none;
+.btn:hover{
+    background-color: #20b2aa;
+    font-weight: bold;
+    width: 300px;
+}
+.switching{
+    margin-top: 10px;
 }
