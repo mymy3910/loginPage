@@ -36,10 +36,13 @@ register.addEventListener('click' , function(event) {
     //各エラーメッセージを表示、エラーがある場合はfalseを返しsubmitしない
     if (this.errorMessages.length != 0) { 
         alert(this.errorMessages.join('\n'));
-        //イベントキャンセル(後続のブラウザのイベントをここで終了させる)
-        event.preventDefault();
+        /*イベントキャンセル(後続のブラウザのイベントをここで終了させる)
+        Qiita用にこのページだけで簡潔させる
+        event.preventDefault();*/
+    }else{
+        alert("登録されました。");
     }
-    //ブラウザのsubmitは継続される
+
 },false);
 
  //パスワード表示切替処理
